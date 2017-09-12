@@ -1,0 +1,9 @@
+# here is the command for importing the data from MYsql to HDFS option With tareget directory and mapper
+command 
+sqoop import --connect jdbc:mysql://quickstart.cloudera/retail_db --username root --password cloudera \
+--table products \
+--fields-terminated-by '\t' \
+--m1 \
+--target-dir-itemsdata
+
+ 
