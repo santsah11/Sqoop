@@ -24,4 +24,12 @@ sqopop import --connect jdbc:mysql://quickstart.clouedra/reatil_db --username cl
 -m2 ( Mapper indication how many ,mapper do we neeed)
 --target-dir-claimdata
 
- 
+Command: sqoop list-databases 
+Explanation: using below command you able to see the data base listing in you s
+sqoop list-databases --connect jdbc:mysql://quickstart.cloudera --username root --password cloudera
+
+#Command: sqoop list-tables \
+#Explanation: To list the all tables in the retail_db(ANY) database.
+sqoop list-tables --connect jdbc:mysql://quickstart.cloudera/retail_db --username root --password cloudera
+
+
