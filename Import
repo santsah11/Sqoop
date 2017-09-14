@@ -6,4 +6,22 @@ sqoop import --connect jdbc:mysql://quickstart.cloudera/retail_db --username roo
 --m1 \
 --target-dir-itemsdata
 
+sqoop command to connect
+sqoop import --connect jdbc:mysql://gateway/claim/ --table customer --username cloudera --password cloudera
+
+we can import the table  from database;
+command
+sqoop import --connect jdbc:mysql://quickstaret.cloudera/retail_db \
+--username root --password cloudera \
+--table products \
+--fields-terminated-by '\t' \
+--m1 \
+--target-dir-itemdata
+
+
+sqopop import --connect jdbc:mysql://quickstart.clouedra/reatil_db --username cloudera --password clouedra --table cliam  \
+--fields-terminated-by '\t'
+-m2 ( Mapper indication how many ,mapper do we neeed)
+--target-dir-claimdata
+
  
